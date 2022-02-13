@@ -34,5 +34,8 @@ img {
   height: auto;
 }
 h1 {
-  color: tomato;
+  color: lightblue;
+}
+.warning {
+  color: red;
 }

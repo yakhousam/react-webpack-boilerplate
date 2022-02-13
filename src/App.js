@@ -1,6 +1,8 @@
 import { hot } from "react-hot-loader";
 import React from "react";
 
+const Warning = React.lazy(() => import("./Warning"));
+
 class App extends React.Component {
   state = {
     count: 0,
@@ -20,6 +22,11 @@ class App extends React.Component {
         >
           -
         </button>
+        {this.state.count > 10 ? (
+          <React.Suspense fallback={null}>
+            <Warning />
+          </React.Suspense>
+        ) : null}
       </div>
     );
   }
