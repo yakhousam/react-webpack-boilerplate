@@ -14,25 +14,6 @@ module.exports = {
         use: [
           {
             loader: "babel-loader",
-            options: {
-              presets: [
-                [
-                  "@babel/preset-env",
-                  {
-                    targets: [
-                      "last 2 versions",
-                      "not dead",
-                      "not < 2%",
-                      "not ie 11",
-                    ],
-                    useBuiltIns: "entry",
-                    corejs: "core-js@3.21.0",
-                  },
-                ],
-                "@babel/preset-react",
-              ],
-              plugins: ["react-hot-loader/babel"],
-            },
           },
         ],
         exclude: /node_modules/,
