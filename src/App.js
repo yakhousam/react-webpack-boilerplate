@@ -1,12 +1,12 @@
-import { hot } from "react-hot-loader";
-import React from "react";
+import { hot } from 'react-hot-loader'
+import React from 'react'
 
-const Warning = React.lazy(() => import("./Warning"));
+const Warning = React.lazy(() => import('./Warning'))
 
 class App extends React.Component {
   state = {
     count: 0,
-  };
+  }
   render() {
     return (
       <div>
@@ -27,9 +27,10 @@ class App extends React.Component {
             <Warning />
           </React.Suspense>
         ) : null}
+        <img src="log" alt="logo" />
       </div>
-    );
+    )
   }
 }
 
-export default hot(module)(App);
+export default hot(module)(App)
