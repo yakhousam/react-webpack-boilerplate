@@ -7,6 +7,7 @@ class App extends React.Component {
   state = {
     count: 0,
   }
+
   render() {
     return (
       <div>
@@ -27,7 +28,6 @@ class App extends React.Component {
             <Warning />
           </React.Suspense>
         ) : null}
-        <img src="log" alt="logo" />
       </div>
     )
   }
